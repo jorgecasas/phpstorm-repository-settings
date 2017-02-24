@@ -1,0 +1,171 @@
+<templateSet group="PHP">
+  <template name="gi" value="$idioma = $controllervars-&gt;get( 'idioma' );&#10;$langfile = $controllervars-&gt;get( 'langfile', '$MODULE$' );&#10;$END$&#10;" description="Idioma" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="c" value="$controllervars = $MODULE_CONTROLLER$::controller_vars();&#10;$codeID = $controllervars-&gt;get('codeID');&#10;$categoryID = $controllervars-&gt;get('categoryID');&#10;$idioma = $controllervars-&gt;get('idioma');&#10;$langfile = $controllervars-&gt;get('langfile', '$MODULE$' );&#10;$END$" description="Controller" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_CONTROLLER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cc" value="$controllervars = Controller_Vars::getController();&#10;$END$" description="Generic controller vars" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="g" value="$codeID = $controllervars-&gt;get( 'codeID' );&#10;$END$" description="Get codeID from controller vars" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="gc" value="$categoryID = $controllervars-&gt;get( 'categoryID' );&#10;$END$" description="Get categoryID from controller vars" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="gco" value="$category = $controllervars-&gt;get_category( true );&#10;$END$" description="Get current category object from controller vars" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="gf" value="$first = $controllervars-&gt;get( 'first' );&#10;$END$" description="Get first from controller vars" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="gn" value="$n = $controllervars-&gt;get( 'num' );&#10;$END$" description="Get num from controller vars" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="gs" value="$subzone = $controllervars-&gt;get( 'subzone' );&#10;$END$" description="Get subzone from controller vars" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="gu" value="$userID = $controllervars-&gt;get( 'userID' );&#10;$END$" description="Get userID from controller vars" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="gut" value="$user_type = $controllervars-&gt;get( 'userType' );&#10;$END$&#10;" description="Get userType from controller vars" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="tra" value="$txt['$KEY$'] = Idiomas_Controller::translate( '$IDIOMA_KEY$', $idioma, $langfile} );&#10;$END$" description="Load array con idioma" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="IDIOMA_KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="tr" value="$str.= Controller_View::row_tdata( Idiomas_Controller::translate( '$TITLE_KEY$', $idioma, $langfile ), $VALUE$ ); &#10;$END$" description="Get row data with title and value" toReformat="true" toShortenFQNames="true">
+    <variable name="TITLE_KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="img" value="echo Controller_View::alert( 'success', Idiomas_Controller::translate( '$IDIOMA_KEY$', $idioma, $langfile ) );&#10;$END$" description="Echo alert success" toReformat="true" toShortenFQNames="true">
+    <variable name="IDIOMA_KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="imga" value="echo Controller_View::alert( 'warning', Idiomas_Controller::translate( '$IDIOMA_KEY$', $idioma, $langfile ) );&#10;$END$" description="Echo alert warning" toReformat="true" toShortenFQNames="true">
+    <variable name="IDIOMA_KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="imgd" value="echo Controller_View::alert( 'danger', Idiomas_Controller::translate( '$IDIOMA_KEY$', $idioma, $langfile ) );&#10;$END$" description="Echo alert danger" toReformat="true" toShortenFQNames="true">
+    <variable name="IDIOMA_KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="mb" value="Controller_URI::buttons( $array_btns, $BOOLEAN$ );&#10;$END$" description="Echo buttons" toReformat="true" toShortenFQNames="true">
+    <variable name="BOOLEAN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="mbs" value="Controller_URI::button_submit( $formID, array( 'div_id' =&gt; '$DIV_AJAX$', 'url_cancel' =&gt; '$URL_BACK$' ) );&#10;$END$" description="Echo buttons submit" toReformat="true" toShortenFQNames="true">
+    <variable name="DIV_AJAX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="URL_BACK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ms" value="$module_settings = Controller_ModuleSettings::getController( 'modules/$MODULE$/settings/module.ini' );&#10;$END$" description="Load module settings" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="row" value="$str.= Controller_View::row_tdata( $END$" description="Get Controller_View::row()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="s" value="$controllervars-&gt;set( '$KEY$', '$VALUE$', '$MODULE_DEFAULT$' ); $END$&#10;" description="Set controller vars var" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="tri" value="Idiomas_Controller::translate( '$IDIOMA_KEY$', $idioma, $langfile} ) $END$" description="Load idioma" toReformat="true" toShortenFQNames="true">
+    <variable name="IDIOMA_KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="uf" value="$error[] = Controller_Forms::field( array( &#10;            'field_type' =&gt; '$FIELD_TYPE$', &#10;            'field_id' =&gt; '$FIELD_ID$', &#10;            'field_title' =&gt; Idiomas_Controller::translate( '$FIELD_TITLE_KEY$', $idioma, $langfile ), &#10;            'field_value' =&gt; $FIELD_VALUE$, &#10;            'obligatory' =&gt; $BOOLEAN_OBLIGATORY$,&#10;            'first' =&gt; $first, &#10;            'field_value_id' =&gt; '$FIELD_VALUE_ID$',&#10;            'array_keys' =&gt; '$ARRAY_KEYS$',&#10;            'array_values' =&gt; '$ARRAY_VALUES$', &#10;            'help' =&gt; Idiomas_Controller::translate( '$HELP_KEY$', $idioma, $langfile ), &#10;            'url' =&gt; $URL_FIELD$, &#10;            'obligatory_select' =&gt; $BOOLEAN_OBLIGATORY_SELECT$,&#10;            'buttons' =&gt; $BOOLEAN_BUTTONS$&#10;        ) &#10;    );&#10;$END$" description="Get form field" toReformat="true" toShortenFQNames="true">
+    <variable name="FIELD_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_TITLE_KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BOOLEAN_OBLIGATORY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_VALUE_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARRAY_KEYS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARRAY_VALUES" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HELP_KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="URL_FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BOOLEAN_OBLIGATORY_SELECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BOOLEAN_BUTTONS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="url" value="$URL_VARIABLE$ = Controller_URI::create( $type_actions, '$ZONE$', '$ACTION$', -1, '$CODE_ID$', array( 'subzone' =&gt; '$SUBZONE$' ), array(), true, false, false );&#10;$END$" description="Get url constructor" toReformat="true" toShortenFQNames="true">
+    <variable name="URL_VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ZONE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUBZONE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="v" value="Logs_Controller::vardump( $VARIABLE$ );&#10;$END$" description="Var dump" toReformat="true" toShortenFQNames="true">
+    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="w" value="Logs_Controller::write( $STRING$, $LOGFILE$, false, '$INFO$' );&#10;$END$" description="Write log" toReformat="true" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LOGFILE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INFO" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

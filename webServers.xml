@@ -1,0 +1,9 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="92352caa-9dcb-4d6a-85b6-2e8585801d2a" name="localhost" url="https://jorgecasas.iternova.net">
+        <fileTransfer port="0" mountedRoot="/var/www/jorgecasas.iternova.net" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</application>
